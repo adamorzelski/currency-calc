@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ToolBar"
+        layout="@layout/toolbar_layout"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="fragment_up"
+        android:clickable="true"
+        android:onClick="performClick"
+        android:background="@drawable/back"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonReverse"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/roundcorner"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/recycle" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="performClick"
+        android:tag="fragment_down"
+        android:background="@drawable/back">
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/textViewLegend"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="Default" />
+
+    <LinearLayout
+
+        android:id="@+id/linear_layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/back"
+        android:weightSum="10"
+        android:clickable="true"
+        android:onClick="performClick2">
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:scrollbars="vertical"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:onClick="performClick2"/>
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:backgroundTint="@color/colorDetailsLight"
+            android:focusable="false"
+            android:text="wyczyść" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:ems="10"
+        android:textColor="@color/colorPrimaryLight"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textCursorDrawable="@color/colorPrimaryLight"
+        android:textSize="5sp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="gone"/>
+
+</LinearLayout>
