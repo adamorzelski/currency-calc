@@ -15,7 +15,7 @@ In addition, the application includes a tutorial- to show how to use it.
 
 *(en)National Bank of Poland/(pl)Narodowy Bank Polski
 
-![screens](https://github.com/adamorzelski/CalcApi/blob/master/screens.png)
+![screens](https://github.com/adamorzelski/my-images/blob/master/android-currency-calc-screens.png)
 
 Technologies
 ------
